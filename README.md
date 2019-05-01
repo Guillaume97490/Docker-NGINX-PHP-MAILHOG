@@ -1,3 +1,51 @@
+# Laravel
+
+  
+
+## Creating a Laravel project
+
+Command to use in the PHP container : 
+> "blog" must be replaced by the name of your project)
+
+```shell
+$ composer create-project --prefer-dist laravel/laravel blog
+```
+
+
+&nbsp;
+## View the project in the browser
+
+Enter this url in your browser :
+> "blog" must be replaced by the name of your project)
+
+localhost:81/blog/public/
+
+
+&nbsp;
+## Project configuration
+
+### Change the owner of your project folder
+
+In the "src" folder, open a new command line and use these commands :
+
+> "$ USER" must be replaced by your linux username, and "blog" by the name of your project
+
+```shell
+$ sudo chown -R $USER:$USER blog/
+```
+
+
+&nbsp;
+### Change the permissions of your project folder
+
+```shell
+$ sudo chmod 775 blog/
+```
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 # Simple Docker Web Stack
 
 [Inspirate From : Benecdictdudel](https://github.com/benedictdudel/simple-docker-web-stack)
@@ -71,3 +119,7 @@ MySQL is an open-source relational database management system (RDBMS).
 MailHog is an email testing tool for developers.
 
 - **Port:** 8025
+
+
+
+

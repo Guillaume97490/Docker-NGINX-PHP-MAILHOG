@@ -21,26 +21,7 @@ Enter this url in your browser :
 localhost:81/blog/public/
 
 
-&nbsp;
-## Project configuration
 
-### Change the owner of your project folder
-
-In the "src" folder, open a new command line and use these commands :
-
-> "$ USER" must be replaced by your linux username, and "blog" by the name of your project
-
-```shell
-$ sudo chown -R $USER:$USER blog/
-```
-
-
-&nbsp;
-### Change the permissions of your project folder
-
-```shell
-$ sudo chmod 775 blog/
-```
 &nbsp;
 
 &nbsp;

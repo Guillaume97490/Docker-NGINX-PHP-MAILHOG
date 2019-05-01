@@ -5,7 +5,7 @@
 ## Creating a Laravel project
 
 Command to use in the PHP container : 
-> "blog" must be replaced by the name of your project)
+> "blog" must be replaced by the name of your project
 
 ```shell
 $ composer create-project --prefer-dist laravel/laravel blog
@@ -16,12 +16,32 @@ $ composer create-project --prefer-dist laravel/laravel blog
 ## View the project in the browser
 
 Enter this url in your browser :
-> "blog" must be replaced by the name of your project)
+> "blog" must be replaced by the name of your project
 
 localhost:81/blog/public/
 
+&nbsp;
 
+## Project configuration
 
+### Change the owner of your project folder
+
+Command to use in the PHP container :
+
+> "blog" must be replaced by the name of your project
+
+```shell
+$ chown -R 1000:www-data blog/
+```
+&nbsp;
+
+### Change the permissions of your project folder
+Command to use in the PHP container :
+> "blog" must be replaced by the name of your project
+
+```shell
+$ chmod -R 775 blog/
+```
 &nbsp;
 
 &nbsp;

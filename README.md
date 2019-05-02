@@ -124,6 +124,14 @@ root /var/www/**blog/public**;
 Dans le terminal où vous avez exécuté la commande docker-compose up,
 faites le raccourcis clavier "**controle + c**" pour arreter les conteneurs
 
+Puis, redémarrer les conteneurs :
+
+```shell
+$ docker-compose up
+```
+
+
+
 
 &nbsp;
 
@@ -266,6 +274,11 @@ root /var/www/**blog/public**;
 In the terminal where you ran the docker-compose command,
 make the keyboard shortcut "**control + c**" to stop the containers
 
+Then, restart the containers :
+
+```shell
+$ docker-compose up
+```
 
 &nbsp;
 

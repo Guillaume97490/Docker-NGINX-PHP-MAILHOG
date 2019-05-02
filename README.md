@@ -12,13 +12,7 @@ $ composer create-project --prefer-dist laravel/laravel blog
 ```
 
 
-&nbsp;
-## View the project in the browser
 
-Enter this url in your browser :
-> "blog" must be replaced by the name of your project
-
-localhost:81/blog/public/
 
 &nbsp;
 
@@ -43,6 +37,23 @@ Command to use in the PHP container :
 $ chmod -R 775 blog/
 ```
 &nbsp;
+
+### Edit the file /docker/nginx/default.conf
+
+At the line :  
+root /var/www/
+
+> "blog" must be replaced by the name of your project
+
+edit the line : root /var/www ---> root /var/www/blog/public
+
+&nbsp;
+## View the project in the browser
+
+Enter this url in your browser :
+
+localhost:81
+
 
 &nbsp;
 

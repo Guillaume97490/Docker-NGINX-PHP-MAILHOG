@@ -12,6 +12,6 @@ RUN set -ex; \
     ; \
     \
     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; \
-    docker-php-ext-install gd mysqli opcache zip; \
+    docker-php-ext-install gd mysqli opcache zip pdo pdo_mysql; \
     composer global require laravel/installer; \
     composer create-project --prefer-dist laravel/laravel demoLaravel;

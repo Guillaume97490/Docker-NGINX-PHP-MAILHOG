@@ -8,10 +8,11 @@ RUN set -ex; \
     apk add --no-cache --virtual .build-deps \
     libjpeg-turbo-dev \
     libpng-dev \
+    postgresql-dev \
     composer \
     ; \
     \
     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; \
-    docker-php-ext-install gd mysqli opcache zip pdo pdo_mysql; \
+    docker-php-ext-install gd mysqli opcache zip pdo pdo_mysql pdo_pgsql; \
     composer global require laravel/installer; \
     composer create-project --prefer-dist laravel/laravel demoLaravel;

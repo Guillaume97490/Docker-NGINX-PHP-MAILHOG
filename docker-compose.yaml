@@ -19,6 +19,7 @@ services:
             - ./docker/php/php.ini:/usr/local/etc/php/conf.d/php.ini:ro
         working_dir: /var/www/
 
+
     mysql:
         image: mysql:5.7
         restart: always
@@ -31,8 +32,31 @@ services:
             - MYSQL_PASSWORD=pass
         volumes:
             - ./docker/volumes/mysql:/var/lib/mysql
-    mailhog:
-        image: mailhog/mailhog:v1.0.0
+
+
+    pgsql:
+        image: postgres
         restart: always
         ports:
-            - 8025:8025
+            - 5432:5482
+        environment:
+            POSTGRES_PASSWORD: pass
+            POSTGRES_DB: web
+            POSTGRES_USER: web
+        volumes:
+            - ./docker/volumes/pgsql:/var/lib/postgresql/data
+
+
+#----  Database management ----#
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
+
+#---- Email testing tool ----#
+    # mailhog:
+    #     image: mailhog/mailhog:v1.0.0
+    #     restart: always
+    #     ports:
+    #         - 8025:8025
